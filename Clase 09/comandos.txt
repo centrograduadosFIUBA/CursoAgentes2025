@@ -1,0 +1,21 @@
+pip install uv
+
+deactivate
+rmdir /s .venv
+
+uv venv --python 3.13
+.venv\Scripts\activate
+pip install --upgrade pip
+uv pip install crewai
+crewai --version
+
+crewai create crew debate
+
+-- Adecuar contenidos de archivos --
+-- Colocar .env ---
+
+cd debate
+crewai install
+crewai run
+
+crewai --help
